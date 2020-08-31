@@ -143,7 +143,7 @@ function send_mail() {
     $("#error").text('Sending');
 
 //////Ajax post data to server
-    $.post('landing-2/contact.php', post_data, function (response) {
+    $.post('vendor/contact-mailer.php', post_data, function (response) {
 
         var  output;
         // load json data from server and output message
