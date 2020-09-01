@@ -32,9 +32,11 @@ NEW START IS COMING
         <div class="display-error"><span id="error"></span></div>
 
         <div class="input-group mb-3 p-0">
-            <input type="text" class="form-control rounded-pill" placeholder="Email Address" id="user_email" required name="user_email" aria-label="Recipient's username">
+        
+            <form action="https://mailthis.to/arpanghoshalwork@gmail.com" method="POST">
+            <input type="text" class="form-control rounded-pill" placeholder="Email Address" id="user_email" required name="user_email" aria-label="Recipient's username" name="_replyto">
             <div class="input-group-append">
-                <button type="button" class="btn btn-large btn-primary padding_button w-100" id="submit_btn" onclick="send_mail();">Notify Me</button>
+                <button type="submit" class="btn btn-large btn-primary padding_button w-100" id="submit_btn" value="send">Notify Me</button>
             </div>
         </div>
 
