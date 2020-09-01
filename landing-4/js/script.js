@@ -143,16 +143,16 @@ function send_mail() {
     $("#error").text('Sending');
 
 //////Ajax post data to server
-    $.post('vendor/contact-mailer.php', post_data, function (response) {
+    $.post('https://submit-form.com/XheQ3tWrD58P9bk_abkvP', post_data, function (response) {
 
         var  output;
         // load json data from server and output message
         if (response.type == 'error') {
 
-            output = '<div class="alert-danger">' + response.text + '</div>';
+            output = '<div class="alert-danger">' + 'Something went wrong. Please try again later.' + '</div>';
         } else {
 
-            output = '<div class="alert-success">' + response.text + '</div>';
+            output = '<div class="alert-success">' + 'Thanks for subscribing. We will send you a notification about the launch of our brand new website.' + '</div>';
 
             //reset values in all input fields
             $('.user_email input').val('');
